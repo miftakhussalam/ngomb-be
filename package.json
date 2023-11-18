@@ -1,39 +1,24 @@
 {
   "name": "ngomb-be",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "export NODE_OPTIONS='--trace-deprecation --abort-on-uncaught-exception' && export NODE_ENV=development && nodemon --exec ts-node ./bin/www.ts",
-    "build": "sh etc/build.sh"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
-    "dotenv": "^16.0.0",
-    "ejs": "~2.6.1",
+    "dotenv": "^16.3.1",
     "express": "~4.16.1",
+    "fastest-validator": "^1.17.0",
     "http-errors": "~1.6.3",
-    "log4js": "latest",
-    "module-alias": "^2.2.2",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^9.0.2",
     "morgan": "~1.9.1",
     "pg": "^8.11.3",
-    "rimraf": "^3.0.2",
-    "sequelize": "^6.35.0",
-    "sequelize-cli-typescript": "^3.2.0-c"
-  },
-  "devDependencies": {
-    "@tsconfig/recommended": "^1.0.0",
-    "@types/cookie-parser": "^1.4.2",
-    "@types/debug": "^4.1.7",
-    "@types/express": "^4.17.13",
-    "@types/http-errors": "^1.8.1",
-    "@types/morgan": "^1.9.3",
-    "@types/node": "^16.10.2",
-    "nodemon": "^2.0.15",
-    "ts-node": "^10.2.1",
-    "typescript": "^4.4.3"
-  },
-  "_moduleAliases": {
-    "@": "./src"
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.35.0"
   }
 }
