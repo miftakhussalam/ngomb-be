@@ -11,6 +11,8 @@
 -- product
 -- productOrder
 - add changelog
+- add seeders
+-- categories
 
 ### v.0.1.0
 init project
