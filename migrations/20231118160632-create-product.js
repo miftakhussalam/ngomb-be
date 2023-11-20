@@ -22,9 +22,12 @@ module.exports = {
         type: Sequelize.STRING
       },
       createdBy: {
-        type: Sequelize.BIGINT
+        type: Sequelize.STRING(20)
       },
       updatedBy: {
+        type: Sequelize.STRING(20)
+      },
+      price: {
         type: Sequelize.BIGINT
       },
       createdAt: {

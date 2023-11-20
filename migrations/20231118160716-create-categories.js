@@ -16,10 +16,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       createdBy: {
-        type: Sequelize.BIGINT
+        type: Sequelize.STRING(20)
       },
       updatedBy: {
-        type: Sequelize.BIGINT
+        type: Sequelize.STRING(20)
       },
       createdAt: {
         allowNull: false,
