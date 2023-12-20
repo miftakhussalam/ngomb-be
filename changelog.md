@@ -1,11 +1,13 @@
 ### v.0.1.1
 - add controllers
--- categories
+-- category
+-- product
 - refine migrations
 -- create-product
 -- create-categories
 - add routes
 -- categories
+-- products
 - refine models
 -- categories
 -- product
