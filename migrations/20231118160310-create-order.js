@@ -12,8 +12,8 @@ module.exports = {
       userId: {
         type: Sequelize.BIGINT
       },
-      productOrderId: {
-        type: Sequelize.BIGINT
+      createdBy: {
+        type: Sequelize.STRING(20)
       },
       createdAt: {
         allowNull: false,

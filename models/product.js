@@ -11,7 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Product.hasMany(models.ProductOrder, { foreignKey: 'productId', as: 'product' });
+      Product.hasMany(models.ProductOrder, { foreignKey: 'productId' });
+      Product.belongsToMany(models.Order, { through: models.ProductOrder, as: 'orders', foreignKey: 'productId' });
       Product.belongsTo(models.Categories, { foreignKey: 'categoryId', as: 'category' });
     }
   }
@@ -23,6 +24,7 @@ module.exports = (sequelize, DataTypes) => {
     createdBy: DataTypes.STRING(20),
     updatedBy: DataTypes.STRING(20),
     price: DataTypes.BIGINT,
+    stock: DataTypes.BIGINT,
   }, {
     sequelize,
     modelName: 'Product',

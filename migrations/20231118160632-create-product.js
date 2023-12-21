@@ -30,6 +30,9 @@ module.exports = {
       price: {
         type: Sequelize.BIGINT
       },
+      stock: {
+        type: Sequelize.BIGINT
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

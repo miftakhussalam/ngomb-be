@@ -243,4 +243,5 @@ module.exports = {
   GetCategoriesByNamePaging,
   GetCategoryById,
   DeleteCategoryById,
+  categoryScheme
 };

@@ -9,6 +9,7 @@ const productScheme = {
   description: { type: 'string', optional: true },
   image: { type: 'string', optional: true },
   price: { type: 'number' },
+  stock: { type: 'number' },
   createdBy: { type: 'string' },
   updatedBy: { type: 'string' },
   createdAt: { type: 'string', optional: true },
@@ -274,4 +275,5 @@ module.exports = {
   GetProductByNamePaging,
   GetProductById,
   DeleteProductById,
+  productScheme,
 };
