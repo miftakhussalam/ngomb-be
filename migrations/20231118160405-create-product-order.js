@@ -12,6 +12,12 @@ module.exports = {
       productId: {
         type: Sequelize.BIGINT
       },
+      orderId: {
+        type: Sequelize.BIGINT
+      },
+      createdBy: {
+        type: Sequelize.STRING(20)
+      },
       note: {
         type: Sequelize.STRING
       },
