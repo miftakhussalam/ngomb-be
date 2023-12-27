@@ -19,6 +19,9 @@
 >- product
 >- productorder
 
+- add seeders
+>- products
+
 ### v.0.1.1
 - add controllers
 >- category
