@@ -1,6 +1,8 @@
 ### v.0.1.2
 - add controllers
 >- order
+>- authorization
+>- user
 
 - refine controllers
 >- category
@@ -13,11 +15,14 @@
 
 - add routes
 >- orders
+>- authorizations
+>- users
 
 - refine models
 >- order
 >- product
 >- productorder
+>- user
 
 - add seeders
 >- products

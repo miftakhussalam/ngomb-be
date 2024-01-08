@@ -1,9 +1,19 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const {
+  UserSignup,
+  UserSignIn,
+  GetAllUser,
+  UpdateUser,
+  UpdatePassword,
+} = require('../controllers/user');
+// const { authenticateJWT } = require('../controller/verifyToken');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+const router = express.Router();
+
+router.post('/signup', UserSignup);
+router.post('/signin', UserSignIn);
+router.get('/', GetAllUser);
+router.put('/update', UpdateUser);
+router.put('/updatePassword', UpdatePassword);
 
 module.exports = router;
